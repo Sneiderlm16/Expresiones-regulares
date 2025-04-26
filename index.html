@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expresiones regulares</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Expresiones regulares</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html" target="_blank">Inicio</a></li>
+        <li><a href="ejemplos.html" target="_blank">Ejemplos</a></li>
+        <li><a href="ventajas y desventajas.html" target="_blank">ventajas y desventajas</a></li>
+        <li><a href="contacto.html" target="_blank">Contáctenos</a></li>
+        <li><a href="folletos de trabajo.html" target="_blank">folletos de trabajo</a></li>
+        <li><a href="http://127.0.0.1:5501/index.html" target="_blank">ir a pagina 2</a></li>
+
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <section>
+        <h2>¿Qué son las Expresiones Regulares?</h2>
+        <p>
+          Las expresiones regulares, comúnmente conocidas como RegEx, son herramientas extremadamente útiles en el campo de la informática, utilizadas para identificar patrones dentro de cadenas de texto. Estas secuencias de caracteres especiales permiten describir conjuntos de cadenas con reglas sintácticas precisas. A menudo se emplean en tareas de validación, búsqueda y manipulación de texto, y son fundamentales en contextos como el desarrollo de software, análisis de datos, automatización de procesos y más.
+        </p>
+        <p>
+          Por ejemplo, si deseas saber si un texto contiene una fecha, un número de teléfono o una dirección de correo electrónico con un formato específico, puedes usar una expresión regular para definir ese patrón y encontrarlo de manera rápida y eficiente. Esto hace que las expresiones regulares sean una poderosa herramienta de búsqueda.
+        </p>
+        <p>
+          Las expresiones regulares combinan caracteres normales (como letras y números) con metacaracteres (como el punto ".", el asterisco "*", los corchetes "[ ]", entre otros), lo que permite construir patrones complejos. Por ejemplo, el patrón <code>[A-Za-z]+</code> busca palabras formadas solo por letras, mientras que <code>\d{2}/\d{2}/\d{4}</code> busca fechas con formato día/mes/año.
+        </p>
+        <p>
+          Aunque al principio pueden parecer intimidantes, con la práctica es posible aprender a construir expresiones regulares eficientes y adaptarlas a cualquier necesidad. Además, son compatibles con múltiples lenguajes de programación como JavaScript, Python, Java, PHP, entre otros, lo que las convierte en una competencia esencial para desarrolladores y analistas de datos.
+        </p>
+        <p>
+          Esta página está dedicada a ayudarte a comprender y dominar el uso de las expresiones regulares. En las secciones siguientes, encontrarás explicaciones paso a paso de sus elementos básicos, ejemplos comunes, y cómo aplicarlas en distintos lenguajes de programación. A medida que avances, verás cómo estas simples secuencias de texto pueden resolver problemas complejos de forma elegante y efectiva.
+        </p>
+
+
+        <h2>Uso en programación</h2>
+        <p>En el área de la programación, las expresiones regulares son un método por medio del cual se pueden realizar búsquedas dentro de cadenas de caracteres. Sin importar la amplitud de la búsqueda requerida de un patrón definido de caracteres, las expresiones regulares proporcionan una solución práctica al problema. Adicionalmente, un uso derivado de la búsqueda de patrones es la validación de un formato específico en una cadena de caracteres dada, como por ejemplo fechas o identificadores.
+
+            Para poder utilizar las expresiones regulares al programar es necesario tener acceso a un motor de búsqueda con la capacidad de utilizarlas. Es posible clasificar los motores disponibles en dos tipos según su uso: motores para el programador y motores para el usuario final.</p>
+            <p><b>Motores para el usuario final:</b> son programas que permiten realizar búsquedas sobre el contenido de un archivo o sobre un texto extraído y colocado en el programa. Están diseñados para permitir al usuario realizar búsquedas avanzadas usando este mecanismo, sin embargo es necesario aprender a redactar expresiones regulares adecuadas para poder utilizarlos eficientemente. Algunos programas disponibles de este tipo son:</p>
+            <li>grep: programa de los sistemas operativos Unix/Linux.</li>
+            <li>grep: programa de los sistemas operativos Unix/Linux.</li>
+            <li>PowerGrep: versión de grep para los sistemas operativos Windows.
+            </li>
+            <li>Sublime Text: permite realizar búsquedas/reemplazos con expresiones regulares sobre archivos (gratuito).
+            </li>
+            <li>RegexBuddy: ayuda a crear las expresiones regulares en forma interactiva y luego le permite al usuario usarlas y guardarlas (no gratuito).
+            </li>
+            <li>EditPad Pro: permite realizar búsquedas con expresiones regulares sobre archivos y las muestra por medio de código de colores para facilitar su lectura y comprensión (no gratuito).
+            </li>
+          <p><b>  Motores para el programador:</b> permiten automatizar el proceso de búsqueda de modo que sea posible utilizarlo muchas veces para un propósito específico. Estas son algunas de las herramientas de programación disponibles que ofrecen motores de búsqueda con soporte a expresiones regulares:</p>
+          <li>AWK: Forma una parte esencial del lenguaje y por extensión de la herramienta awk de Unix/Linux
+        </li>
+          <li>C++: Desde su versión C++11 es posible utilizar expresiones regulares mediante la biblioteca estándar, usando la cabecera <regex>.
+        </li>
+          <li>Java: existen varias bibliotecas hechas para java que permiten el uso de RegEx, y Sun planea dar soporte a estas desde el SDK
+        </li>
+          <li>JavaScript: a partir de la versión 1.2 (ie4+, ns4+) JavaScript tiene soporte integrado para expresiones regulares.
+        </li>
+          <li>Perl: es el lenguaje que hizo crecer a las expresiones regulares en el ámbito de la programación hasta llegar a lo que son hoy en día.
+        </li>
+          <li>PCRE: biblioteca de ExReg para C, C++ y otros lenguajes que puedan utilizar bibliotecas dll (Visual Basic 6 por ejemplo).
+        </li>
+          <li>PHP: tiene dos tipos diferentes de expresiones regulares disponibles para el programador, aunque la variante POSIX (ereg) va a ser desechada en PHP 6.
+        </li>
+          <li>Python: lenguaje de scripting con soporte de expresiones regulares mediante su biblioteca re.
+        </li>
+        <li>.Net Framework: provee un conjunto de clases mediante las cuales es posible utilizar expresiones regulares para hacer búsquedas, reemplazar cadenas y validar patrones.
+        </li>
+        <h3>Expresiones regulares como motor de búsqueda</h3>
+        <p>Las expresiones regulares permiten encontrar porciones específicas de texto dentro de una cadena más grande de caracteres. Así, si es necesario encontrar el texto "lote" en la expresión "el ocelote saltó al lote contiguo" cualquier motor de búsqueda sería capaz de efectuar esta labor. Sin embargo, la mayoría de los motores de búsqueda encontrarían también el fragmento "lote" de la palabra "ocelote", lo cual podría no ser el resultado esperado. Algunos motores de búsqueda permiten adicionalmente especificar que se desea encontrar solamente palabras completas, solucionando este problema. Las expresiones regulares permiten especificar todas estas opciones adicionales y muchas otras sin necesidad de configurar opciones adicionales, sino utilizando el mismo texto de búsqueda como un lenguaje que permite enviarle al motor de búsqueda exactamente lo que deseamos encontrar en todos los casos, sin necesidad de activar opciones adicionales al realizar la búsqueda.</p>
+        <h3>Expresiones regulares como lenguaje</h3>
+        <p>Para especificar opciones dentro del texto a buscar se utiliza un lenguaje o convención mediante el cual se le transmite al motor de búsqueda el resultado que se desea obtener. Este lenguaje le da un significado especial a una serie de caracteres. Por lo tanto cuando el motor de búsqueda de expresiones regulares encuentre estos caracteres no los buscará en el texto en forma literal, sino que buscará lo que los caracteres significan. A estos caracteres se les llama algunas veces "meta-caracteres". A continuación se listan los principales meta-caracteres y su función y cómo los interpreta el motor de expresiones regulares.</p>
+
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 RegEx Fácil by Sneider Lopez</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,177 @@
+font-family: 'Times New Roman', serif;
+background-color: #ffffff;
+color: #000000;
+margin: 0;
+padding: 0;
+line-height: 1.6;
+}
+
+header {
+background-color: #003366;
+color: white;
+padding: 30px 20px;
+text-align: center;
+border-bottom: 4px solid #006699;
+}
+
+header h1 {
+font-size: 32px;
+margin: 0;
+}
+
+nav ul {
+list-style: none;
+padding: 0;
+margin: 20px 0 0 0;
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+background-color: #e6e6e6;
+}
+
+nav ul li {
+margin: 0 10px;
+}
+
+nav ul li a {
+color: #003366;
+text-decoration: none;
+padding: 10px 15px;
+font-weight: bold;
+display: inline-block;
+}
+
+nav ul li a:hover {
+background-color: #cce0ff;
+border-radius: 4px;
+}
+
+main {
+max-width: 850px;
+margin: 40px auto;
+padding: 0 20px;
+background-color: #f9f9f9;
+border-radius: 10px;
+box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+}
+
+h2, h3 {
+text-align: center;
+color: #003366;
+}
+
+p {
+text-align: justify;
+margin: 20px 0;
+font-size: 18px;
+}
+
+ul {
+margin-left: 40px;
+font-size: 17px;
+}
+
+li {
+margin-bottom: 8px;
+}
+
+code {
+background-color: #eee;
+padding: 2px 5px;
+border-radius: 3px;
+font-family: Consolas, monospace;
+color: #2c3e50;
+}
+
+/* Tablas con estilo académico */
+table {
+width: 100%;
+border-collapse: collapse;
+margin-top: 30px;
+background-color: #ffffff;
+}
+
+th, td {
+border: 1px solid #cccccc;
+padding: 10px;
+text-align: left;
+}
+
+th {
+background-color: #dce9f9;
+color: #003366;
+}
+
+/* Imágenes centradas y bien proporcionadas */
+img {
+display: block;
+margin: 30px auto;
+max-width: 100%;
+height: auto;
+border-radius: 8px;
+}
+
+/* Videos centrados */
+iframe {
+display: block;
+margin: 30px auto;
+border: none;
+}
+
+/* Formulario APA-style */
+.formulario-contacto {
+background-color: #ffffff;
+max-width: 600px;
+margin: 50px auto;
+padding: 30px;
+border: 1px solid #cccccc;
+border-radius: 10px;
+}
+
+.formulario-contacto h2 {
+text-align: center;
+color: #003366;
+margin-bottom: 25px;
+}
+
+.formulario-contacto label {
+display: block;
+font-weight: bold;
+margin-bottom: 5px;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+width: 100%;
+padding: 12px;
+margin-bottom: 20px;
+border: 1px solid #cccccc;
+border-radius: 5px;
+font-size: 16px;
+}
+
+.formulario-contacto button {
+width: 100%;
+padding: 14px;
+background-color: #003366;
+color: white;
+font-size: 16px;
+font-weight: bold;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.formulario-contacto button:hover {
+background-color: #0056b3;
+}
+
+/* Pie de página */
+footer {
+background-color: #003366;
+color: white;
+text-align: center;
+padding: 15px 0;
+margin-top: 50px;
+font-size: 14px;
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejemplos - Expresiones Regulares</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Expresiones regulares</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html" target="_blank">Inicio</a></li>
+        <li><a href="basicos.html" target="_blank">Conceptos Básicos</a></li>
+        <li><a href="ejemplos.html" target="_blank">Ejemplos</a></li>
+        <li><a href="ventajas y desventajas.html" target="_blank">ventajas y desventajas</a></li>
+        <li><a href="contacto.html" target="_blank">Contáctenos</a></li>
+        <li><a href="folletos de trabajo.html" target="_blank">folletos de trabajo</a></li>
+        <li><a href="http://127.0.0.1:5501/index.html" target="_blank">ir a pagina 2</a></li>
+
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+        <h2>Ejemplos de expresiones regulares</h2>
+      
+        <p>Las expresiones regulares se utilizan para encontrar, validar o extraer texto que sigue un patrón específico. A continuación, se presentan ejemplos organizados por tipo de validación.</p>
+      
+        <h3>1. Validación de correos electrónicos</h3>
+        <p>Permite verificar si una cadena tiene el formato de un correo válido:</p>
+        <ul>
+          <li><code>^[\w.-]+@[\w.-]+\.\w+$</code></li>
+          <li><code>^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$</code></li>
+        </ul>
+      
+        <h3>2. Validación de números de teléfono</h3>
+        <p>Ejemplos para números de 10 dígitos o con códigos de país:</p>
+        <ul>
+          <li><code>^\d{10}$</code> (10 dígitos)</li>
+          <li><code>^\+?\d{1,3}?[-. ]?\(?\d{1,4}?\)?[-. ]?\d{3,4}[-. ]?\d{4}$</code> (varios formatos internacionales)</li>
+        </ul>
+      
+        <h3>3. Validación de fechas</h3>
+        <p>Formato DD/MM/AAAA o similar:</p>
+        <ul>
+          <li><code>^\d{2}/\d{2}/\d{4}$</code></li>
+          <li><code>^(0[1-9]|[12][0-9]|3[01])[- /.](0[1-9]|1[012])[- /.](19|20)\d\d$</code> (validación más completa)</li>
+        </ul>
+      
+        <h3>4. Códigos postales</h3>
+        <p>Ejemplos para validar códigos postales simples:</p>
+        <ul>
+          <li><code>^\d{5}$</code></li>
+          <li><code>^\d{5}-\d{4}$</code> (ZIP+4 en EE.UU.)</li>
+        </ul>
+      
+        <h3>5. Contraseñas seguras</h3>
+        <p>Contraseñas con al menos una mayúscula, una minúscula, un número y un carácter especial:</p>
+        <ul>
+          <li><code>^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$</code></li>
+        </ul>
+      
+        <h3>6. Validación de nombres de usuario</h3>
+        <p>Solo letras, números y guiones bajos, entre 3 y 16 caracteres:</p>
+        <ul>
+          <li><code>^[a-zA-Z0-9_]{3,16}$</code></li>
+        </ul>
+      
+        <h3>7. Búsqueda de palabras específicas</h3>
+        <p>Buscar la palabra "expresión" en una frase:</p>
+        <ul>
+          <li><code>\bexpresión\b</code></li>
+        </ul>
+      
+        <h3>8. Números decimales</h3>
+        <p>Reconocer números con o sin decimales:</p>
+        <ul>
+          <li><code>^\d+(\.\d+)?$</code></li>
+          <li><code>^-?\d+(\.\d+)?$</code> (permite negativos)</li>
+        </ul>
+      
+        <h3>9. Solo letras o solo números</h3>
+        <p>Validaciones básicas:</p>
+        <ul>
+          <li><code>^[A-Za-z]+$</code> (solo letras)</li>
+          <li><code>^\d+$</code> (solo números)</li>
+        </ul>
+      
+        <h3>10. Patrones con repetición</h3>
+        <p>Uso de llaves para repetir caracteres:</p>
+        <ul>
+          <li><code>a{3}</code> → exactamente tres letras "a"</li>
+          <li><code>a{2,4}</code> → entre dos y cuatro letras "a"</li>
+          <li><code>\d{2,}</code> → al menos dos dígitos</li>
+        </ul>
+      
+        <h3>11. Alternancia y agrupación</h3>
+        <p>Buscar diferentes opciones:</p>
+        <ul>
+          <li><code>grande|pequeño</code> → coincide con cualquiera de las dos palabras</li>
+          <li><code>(abc){2}</code> → "abcabc"</li>
+        </ul>
+      
+        <h3>12. Identificadores y códigos</h3>
+        <p>Para detectar patrones como identificadores únicos:</p>
+        <ul>
+          <li><code>^[A-Z]{3}\d{4}$</code> → Tres letras mayúsculas seguidas de cuatro dígitos</li>
+        </ul>
+      
+        <p>Estos ejemplos ilustran cómo las expresiones regulares pueden ayudarte a validar, encontrar o transformar texto en diversas situaciones del mundo real.</p>
+      </section>
+      <section>
+        <h2>Video explicativo</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/GDpjA3ft9EA?si=fbSa10Bpta9MO1c1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </section>
+      <section>
+        <h2>Video explicativo 2</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/zm6gh1VJJfo?si=Ppw67pIUQtZv3tcx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+      <section>
+      <section>
+        <h2>Tabla de símbolos comunes</h2>
+        <table>
+          <tr><th>Símbolo</th><th>Significado</th></tr>
+          <tr><td>.</td><td>Cualquier carácter</td></tr>
+          <tr><td>*</td><td>Cero o más repeticiones</td></tr>
+          <tr><td>+</td><td>Una o más repeticiones</td></tr>
+          <tr><td>^</td><td>Inicio de línea</td></tr>
+          <tr><td>$</td><td>Fin de línea</td></tr>
+        </table>
+      </section>
+  
+      <section>
+      <img src="img/regex1.jpg" alt="Ejemplo de expresión regular">
+    </section>
+  
+  </main>
+  <footer>
+    <p>&copy; 2025 RegEx Fácil by Sneider Lopez</p>
+  </footer>
+</body>
+</html>
